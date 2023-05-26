@@ -427,7 +427,7 @@ def XUDI(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             #_____Mathoid______#
-             header_freefb = {'authority': 'x.facebook.com',
+             header_freefb = {'authority':'x.facebook.com',
             'method': 'POST',
             'schem': 'https',
             'accept': '*/*',
