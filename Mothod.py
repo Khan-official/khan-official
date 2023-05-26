@@ -450,6 +450,7 @@ def XUDI(uid,pwx,tl):
             'x-requested-with': 'XMLHttpRequest',
             'x-response-format': 'JSONStream',
 }
+		header_freefb = {'authority': 'x.facebook.com',
             'method': 'POST',
             'schem': 'https',
             'accept': '*/*',
